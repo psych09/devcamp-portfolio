@@ -20,3 +20,7 @@ end
 ```javascript
 alert('Hi there');
 ```
+
+```ruby
+p "Hello"
+```
