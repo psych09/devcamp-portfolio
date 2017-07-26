@@ -15,4 +15,8 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+  
+  def copyright_generator
+    FlynnViewTool::Renderer.copyright 'Jed Flynn', 'All rights reserved'
+  end
 end
