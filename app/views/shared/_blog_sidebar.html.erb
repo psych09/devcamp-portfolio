@@ -4,14 +4,23 @@
     <p>I strive to deliver the best quality in everything I build by focusing on detail, working hard, and communicating clearly.</p>
   </div>
   
+  <%= source_helper("alert alert-info blog-sidebar-source") %>
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+  
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
     <ol class="list-unstyled social-links">
-      <li><a href="https://github.com/psych09"><%= fa_icon "github" %></a></li>
-      <li><a href="https://www.instagram.com/jed.jones.09/?hl=en"><%= fa_icon "instagram" %></a></li>
-      <li><a href="https://www.facebook.com/jed.flynn.09"><%= fa_icon "facebook" %></a></li>
-      <li><a href="https://twitter.com/jedjones09"><%= fa_icon "twitter" %></a></li>
-      <li><a href="https://www.linkedin.com/in/jed-flynn-29274b131/"><%= fa_icon "linkedin-square" %></a></li>
+      <li><a href="https://github.com/psych09" target="new"><%= fa_icon "github" %></a></li>
+      <li><a href="https://www.instagram.com/jed.flynn.09/?hl=en" target="new"><%= fa_icon "instagram" %></a></li>
+      <li><a href="https://www.facebook.com/jed.flynn.09" target="new"><%= fa_icon "facebook" %></a></li>
+      <li><a href="https://twitter.com/jedflynn09" target="new"><%= fa_icon "twitter" %></a></li>
+      <li><a href="https://www.linkedin.com/in/jed-flynn-29274b131/" target="new"><%= fa_icon "linkedin-square" %></a></li>
     </ol>
   </div>
 </div>
