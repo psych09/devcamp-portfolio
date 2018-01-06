@@ -97,7 +97,7 @@ h6, .h6 {
 }
 
 .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 .nav-masthead .active {
@@ -239,14 +239,22 @@ h6, .h6 {
 
 .app-card-container > .card {
   padding: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .card-block {
   margin-top: 5px;
   margin-bottom: 5px;
+  padding: 15px 40px 0px 0px;
+  list-style-type: none;
 }
 
 .skill {
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.app-list-style {
+  list-style-type: none;
 }
