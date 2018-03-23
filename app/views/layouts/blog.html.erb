@@ -9,7 +9,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Saira" rel="stylesheet">
     
-    <meta name="keywords" content="<%=@seo_keywords %>" />
+    <meta name="keywords" content="<%= @seo_keywords %>" />
     
     <%= favicon_link_tag 'favicons/favicon.ico' %>
 
@@ -19,16 +19,17 @@
 
   <body>
     
-    <%= render 'shared/blog_nav' %>
+    <%= render 'shared/portfolio_nav' %>
     <%= render 'shared/blog_masthead' %>
     
     <div class="container">
 
       <div class="row">
-          
+        
         <%= yield %>
         
         <%= render 'shared/blog_sidebar' %>
+        
       </div>  
         
         <%= render 'shared/blog_footer' %>
